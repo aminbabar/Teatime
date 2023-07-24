@@ -20912,3 +20912,112 @@ Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.8ms | Allocations: 233
 Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.4ms | Allocations: 2987)
 
 
+Started GET "/api/session" for ::1 at 2023-07-24 12:01:07 -0400
+Started GET "/favicon.ico" for ::1 at 2023-07-24 12:01:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#frontend_index as */*
+Processing by Api::SessionsController#show as JSON
+  Parameters: {"path"=>"favicon"}
+  Rendering public/index.html
+  Rendered public/index.html (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 4874)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+Completed 200 OK in 40ms (Views: 0.4ms | ActiveRecord: 5.9ms | Allocations: 9029)
+
+
+Started GET "/api/teas" for ::1 at 2023-07-24 12:01:07 -0400
+Processing by Api::TeasController#index as JSON
+  Rendering api/teas/index.json.jbuilder
+  [1m[36mTea Load (0.7ms)[0m  [1m[34mSELECT "teas".* FROM "teas"[0m
+  ↳ app/views/api/teas/index.json.jbuilder:2
+  Rendered api/teas/_tea.json.jbuilder (Duration: 1.5ms | Allocations: 163)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 12)
+  Rendered api/teas/index.json.jbuilder (Duration: 31.1ms | Allocations: 6111)
+Completed 200 OK in 44ms (Views: 28.2ms | ActiveRecord: 12.3ms | Allocations: 10785)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-07-24 12:07:57 -0400
+Processing by StaticPagesController#frontend_index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering public/index.html
+  Rendered public/index.html (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 307)
+
+
+Started GET "/api/session" for ::1 at 2023-07-24 12:07:57 -0400
+Processing by Api::SessionsController#show as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 8.5ms | Allocations: 4081)
+
+
+Started GET "/api/teas" for ::1 at 2023-07-24 12:07:57 -0400
+Processing by Api::TeasController#index as JSON
+  Rendering api/teas/index.json.jbuilder
+  [1m[36mTea Load (0.7ms)[0m  [1m[34mSELECT "teas".* FROM "teas"[0m
+  ↳ app/views/api/teas/index.json.jbuilder:2
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 59)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 12)
+  Rendered api/teas/index.json.jbuilder (Duration: 3.1ms | Allocations: 1359)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.7ms | Allocations: 1777)
+
+
+Started GET "/dwfnwer/qwefqerwf/qerfw3erf" for ::1 at 2023-07-24 12:08:00 -0400
+Processing by StaticPagesController#frontend_index as HTML
+  Parameters: {"path"=>"dwfnwer/qwefqerwf/qerfw3erf"}
+  Rendering public/index.html
+  Rendered public/index.html (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started GET "/api/session" for ::1 at 2023-07-24 12:08:00 -0400
+Processing by Api::SessionsController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 880)
+
+
+Started GET "/api/teas" for ::1 at 2023-07-24 12:08:00 -0400
+Processing by Api::TeasController#index as JSON
+  Rendering api/teas/index.json.jbuilder
+  [1m[36mTea Load (0.3ms)[0m  [1m[34mSELECT "teas".* FROM "teas"[0m
+  ↳ app/views/api/teas/index.json.jbuilder:2
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 59)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 12)
+  Rendered api/teas/index.json.jbuilder (Duration: 3.2ms | Allocations: 1319)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1705)
+
+
+Started GET "/api/session" for ::1 at 2023-07-24 12:08:53 -0400
+Processing by Api::SessionsController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 907)
+
+
+Started GET "/api/teas" for ::1 at 2023-07-24 12:08:53 -0400
+Processing by Api::TeasController#index as JSON
+  Rendering api/teas/index.json.jbuilder
+  [1m[36mTea Load (0.3ms)[0m  [1m[34mSELECT "teas".* FROM "teas"[0m
+  ↳ app/views/api/teas/index.json.jbuilder:2
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 59)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.1ms | Allocations: 14)
+  Rendered api/teas/_tea.json.jbuilder (Duration: 0.0ms | Allocations: 12)
+  Rendered api/teas/index.json.jbuilder (Duration: 3.2ms | Allocations: 1319)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1690)
+
+
